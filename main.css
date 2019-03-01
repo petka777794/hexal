@@ -1,0 +1,10 @@
+nav {
+    background-color:  #323232;
+    height: 63px;
+}
+
+nav  a {
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+}
