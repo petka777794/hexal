@@ -78,6 +78,10 @@ div.main-header__logo {
     text-align: center;
 }
 
+.main-header__menu-item a:focus {
+    color: #2eb398;
+}
+
 .main-content::after {
     content: "";
     border-bottom: 1px solid #e4e9eb;
