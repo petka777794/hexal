@@ -194,55 +194,55 @@ div.main-header__logo {
 }
 
 .top-line__p-container:nth-child(1) .wrapper__item {
-    background-image: url('./assets/6.png');
+    background-image: url('./assets/hexal_6.png');
 }
 
 .top-line__p-container:nth-child(2) .wrapper__item {
-    background-image: url('./assets/5.png');
+    background-image: url('./assets/hexal_5.png');
 }
 
 .top-line__p-container:nth-child(3) .wrapper__item {
-    background-image: url('./assets/8.png');
+    background-image: url('./assets/hexal_8.png');
 }
 
 .top-line__p-container:nth-child(4) .wrapper__item {
-    background-image: url('./assets/7.png');
+    background-image: url('./assets/hexal_7.png');
 }
 
 .center-line__p-container:nth-child(1) .wrapper__item {
-    background-image: url('./assets/12.png');
+    background-image: url('./assets/hexal_12.png');
 }
 
 .center-line__p-container:nth-child(2) .wrapper__item {
-    background-image: url('./assets/11.png');
+    background-image: url('./assets/hexal_11.png');
 }
 
 .center-line__p-container:nth-child(3) .wrapper__item {
-    background-image: url('./assets/13.png');
+    background-image: url('./assets/hexal_13.png');
 }
 
 .center-line__p-container:nth-child(4) .wrapper__item {
-    background-image: url('./assets/10.png');
+    background-image: url('./assets/hexal_10.png');
 }
 
 .center-line__p-container:nth-child(5) .wrapper__item {
-    background-image: url('./assets/9.png');
+    background-image: url('./assets/hexal_9.png');
 }
 
 .bottom-line__p-container:nth-child(1) .wrapper__item {
-    background-image: url('./assets/2.png');
+    background-image: url('./assets/hexal_2.png');
 }
 
 .bottom-line__p-container:nth-child(2) .wrapper__item {
-    background-image: url('./assets/1.png');
+    background-image: url('./assets/hexal_1.png');
 }
 
 .bottom-line__p-container:nth-child(3) .wrapper__item {
-    background-image: url('./assets/4.png');
+    background-image: url('./assets/hexal_4.png');
 }
 
 .bottom-line__p-container:nth-child(4) .wrapper__item {
-    background-image: url('./assets/3.png');
+    background-image: url('./assets/hexal_3.png');
 }
 
 .main-author {
@@ -511,5 +511,3 @@ div.contact-info p {
     max-width: 782px;
     margin: 0 auto;
 }
-
-/*MEDIA QUERY*/
