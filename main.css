@@ -25,57 +25,69 @@
     position: absolute;
 }
 
-.main-header__nav ul {
+.main-header__ul {
     display: flex;
+    flex-direction: row;
     justify-content: center;
+    align-items: center;
     list-style-type: none;
     box-sizing: border-box;
     padding: 0;
+    margin: 0;
 }
 
-.main-header__nav ul li {
-    padding: 20px;
-    box-sizing: border-box;
-    width: 132px;
-}
-
-.main-header__nav ul li.main-header__logo,
+.main-header__ul li.main-header__logo,
 div.main-header__logo {
     width: 90px;
     height: 63px;
     background-image: url(./assets/logo.png);
     background-repeat: no-repeat;
-    background-position: center;
-    padding: 12px 0 0 0;
+    background-position: center 10px;
+    padding: 0;
 }
 
-.main-header__nav ul li.main-header__logo a,
+.main-header__ul li.main-header__logo a,
 div.main-header__logo a {
     width: 0px;
     height: 0px;
     top: 63px;
-    border-left: 45px solid transparent;
-    border-right: 45px solid transparent;
-    border-top: 27px solid #323232;
+    border-left: 48px solid transparent;
+    border-right: 48px solid transparent;
+    border-top: 26px solid #323232;
     position: absolute;
-    text-align: left;
 }
 
 div.main-header__logo {
     display: none;
 }
 
-.main-header__nav ul li a {
+.main-header__nav .main-header__menu-item a {
     color: #fff;
     text-decoration: none;
     text-transform: uppercase;
     font-family: Lato;
     font-weight: bold;
-    font-size: 10pt;
+    font-size: 10px;
 }
 
 .main-header__menu-item {
     text-align: center;
+    margin: 0 10px;
+    box-sizing: border-box;
+}
+
+.main-header__menu-item:first-child::after {
+    content: "•";
+    display: inline-block;
+    margin: 0 0 0 16px;
+    color: #3c3c47;
+}
+
+.main-header__menu-item:last-child::before {
+    content: "•";
+    display: inline-block;
+    margin: 0 16px 0 0;
+    color: #3c3c47;
 }
 
 .main-header__menu-item a:focus {
@@ -85,9 +97,10 @@ div.main-header__logo {
 .main-content::after {
     content: "";
     border-bottom: 1px solid #e4e9eb;
-    width: calc(100% - 40px);
+    width: calc(100% - 561px);
     display: block;
     margin: 0 auto;
+    padding-bottom: 56px;
 }
 
 .main-content-article {
@@ -136,12 +149,12 @@ div.main-header__logo {
 }
 
 .main-content__top-line {
-    margin-top: 77px;
+    margin-top: 52px;
 }
 
 .main-content__center-line,
 .main-content__bottom-line {
-    margin-top: -70px;
+    margin-top: -78px;
 }
 
 .top-line__p-container,
@@ -176,7 +189,7 @@ div.main-header__logo {
     transform: rotate(-60deg);
     overflow: hidden;
     background-repeat: no-repeat;
-    background-position: 50%;
+    background-position: 50% 82%;
     visibility: visible;
 }
 
@@ -234,43 +247,45 @@ div.main-header__logo {
 
 .main-author {
     background-color: #2eb398;
-    padding: 13px 100px;
+    padding: 12px 100px;
     width: 100%;
     box-sizing: border-box;
     display: flex;
     justify-content: center;
-    margin-top: 20px;
+    margin-top: 11px;
 }
 
 .main-author__article {
     display: flex;
     max-width: 822px;
+    padding-bottom: 55px;
 }
 
 .main-author__left {
-    flex-basis: 30%;
+    flex-basis: 27%;
     position: relative;
 }
 
 .main-author__right {
-    flex-basis: 70%;
+    flex-basis: 73%;
     display: flex;
     flex-direction: column;
-    /* padding-left: 20px; */
     padding-right: 20px;
+    padding-left: 5px;
 }
 
 .main-author__p-container {
     margin: 0;
     position: absolute;
-    top: calc(50% - 103px);
-    left: calc(50% - 90px);
+    top: calc(50% - 75px);
+    left: calc(50% - 86px);
 }
 
 .main-author__profession {
     color: #20816d;
-    font-size: 18pt;
-    margin: 10px 0 0 0;
+    font-size: 18px;
+    margin: 0px;
+    font-family: "Maven Pro";
 }
 
 .main-author__p-container .p-container__wrapper .wrapper__item {
@@ -279,16 +294,18 @@ div.main-header__logo {
 
 .main-author__header {
     color: #d7fcf5;
-    font-size: 30pt;
+    font-size: 30px;
     font-family: "Maven Pro";
-    margin-top: 68px;
+    margin-top: 50px;
+    margin-bottom: 0;
 }
 
 .main-author__description {
     font-family: Lato;
-    font-size: 12pt;
+    font-size: 12px;
     color: #d7fcf5;
-    margin: 22px 0 0 0;
+    margin: 12px 0 0 0;
+    line-height: 1.8;
 }
 
 .main-author:before {
@@ -303,7 +320,7 @@ div.main-header__logo {
 
 .main-author__socials {
     display: flex;
-    margin-top: 20px;
+    margin-top: 35px;
     margin-left: auto;
 }
 .main-author__link:hover {
@@ -346,28 +363,29 @@ div.main-header__logo {
     width: 25px;
 }
 
-.main-footer__appeal-description {
+.main-form__appeal-description {
     display: flex;
+    margin-top: 13px;
 }
 
-.main-footer {
+.main-form {
     background-color: #323232;
     position: relative;
 }
 
-.main-footer__header {
+.main-form__header {
     color: #e0e0e0;
-    font-size: 30pt;
+    font-size: 30px;
     font-family: "Maven Pro";
     margin: 0;
     font-weight: 100;
 }
 
-.main-footer__caption {
+.main-form__caption {
     color: #bebebe;
-    font-size: 18pt;
+    font-size: 18px;
     font-family: "Maven Pro";
-    margin: 0;
+    margin: 0 0 0 3px;
 }
 .appeal-description__left {
     flex-basis: 76%;
@@ -410,22 +428,32 @@ div.main-header__logo {
     color: #fff;
     margin-left: calc(100% - 90px);
     font-family: Lato;
+    font-size: 12px;
+    margin-top: 5px;
 }
 
 .appeal-description__form-text {
-    font-size: 12pt;
+    font-size: 12px;
     text-align: justify;
     color: #bebebe;
     font-family: "Maven Pro";
-    line-height: 1.5;
+    line-height: 1.8;
+    margin-left: 5px;
+    margin-top: 4px;
+}
+
+.appeal-description__contact-info {
+    margin: 35px 0 0 7px;
 }
 
 .contact-info__address,
 .contact-info__phone,
 .contact-info__email {
-    font-size: 12pt;
+    font-size: 12px;
     color: #bebebe;
     font-family: Lato;
+    margin-top: 0px;
+    margin-bottom: 7px;
 }
 
 .contact-info__address a,
@@ -445,89 +473,43 @@ div.contact-info p {
     color: #2eb398;
     width: 25px;
 }
-
-.main-footer__footer {
-    height: 43px;
+.main-footer {
+    position: relative;
+    display: flex;
+    height: 49px;
+    align-items: center;
     background-color: #222222;
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    color: #454545;
-    font-size: 12pt;
-    font-family: "Maven Pro";
-    padding-top: 12px;
-    padding-left: 39px;
-    box-sizing: border-box;
 }
-.main-footer__footer-wrapper {
+.main-footer__footer {
+    color: #454545;
+    font-size: 12px;
+    font-family: "Maven Pro";
+    padding-left: 39px;
+}
+.main-form__wrapper {
     max-width: 960px;
     margin: 0 auto;
-    padding: 50px 0 53px;
+    padding: 13px 0 3px;
 }
-.main-footer__footer-wrapper::before {
+.main-form__wrapper::before {
     content: "";
     border-top: 2px solid #2b2b2b;
     width: 100%;
     display: block;
     margin: 0 auto;
-    padding: 53px 0;
+    padding: 22px 0;
 }
-.main-footer__footer-wrapper::after {
+.main-form__wrapper::after {
     content: "";
     border-bottom: 2px solid #2b2b2b;
     width: 100%;
     display: block;
     margin: 0 auto;
-    padding: 53px 0;
+    padding: 29px 0;
 }
-.main-footer__footer-wrapper-content {
-    max-width: 785px;
+.main-form__wrapper-content {
+    max-width: 782px;
     margin: 0 auto;
 }
 
 /*MEDIA QUERY*/
-
-@media only screen and (max-width: 640px) {
-    .menu-item {
-        display: none;
-    }
-    div.main-header__logo {
-        display: flex;
-        justify-content: center;
-        margin: 0 auto;
-    }
-    div.main-header__logo a {
-        top: 62px;
-    }
-    nav ul,
-    nav:active ul {
-        display: none;
-        position: absolute;
-        padding: 20px;
-        background: #fff;
-        border: 5px solid #444;
-        left: 25%;
-        top: 82px;
-        width: 50%;
-        border-radius: 4px 0 4px 4px;
-    }
-    nav li {
-        text-align: center;
-        width: 100%;
-        padding: 10px 0;
-        margin: 0;
-    }
-    nav:hover ul {
-        display: block;
-    }
-    nav:hover ul li.menu-item {
-        display: block;
-        padding: 20px 0;
-    }
-    nav:hover ul li.main-header__logo {
-        display: none;
-    }
-    nav:hover ul li.menu-item a {
-        color: #323232;
-    }
-}

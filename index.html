@@ -32,7 +32,7 @@
     <header class="main-header">
       <nav class="main-header__nav">
         <div class="main-header__logo"><a href="#"></a></div>
-        <ul>
+        <ul class="main-header__ul">
           <li class="main-header__menu-item"><a href="#">Portfolio</a></li>
           <li class="main-header__menu-item"><a href="#">About</a></li>
           <li class="main-header__logo"><a href="#"></a></li>
@@ -119,7 +119,6 @@
           </div>
         </article>
       </section>
-
       <section class="main-author">
         <article class="main-author__article">
           <div class="main-author__left">
@@ -130,7 +129,7 @@
             </div>
           </div>
           <div class="main-author__right">
-            <header class="main-author__header">Smith Anderson</header>
+            <h1 class="main-author__header">Smith Anderson</h1>
             <p class="main-author__profession">
               Illustrator & Character Designer
             </p>
@@ -166,79 +165,81 @@
           </div>
         </article>
       </section>
-    </main>
-    <footer class="main-footer">
-      <div class="main-footer__footer-wrapper">
-        <div class="main-footer__footer-wrapper-content">
-          <h1 class="main-footer__header">Get In Touch</h1>
-          <p class="main-footer__caption">
-            In order to get in touch use the contact form below:
-          </p>
+      <section class="main-form">
+        <div class="main-form__wrapper">
+          <div class="main-form__wrapper-content">
+            <h1 class="main-form__header">Get In Touch</h1>
+            <p class="main-form__caption">
+              In order to get in touch use the contact form below:
+            </p>
 
-          <div class="main-footer__appeal-description">
-            <div class="appeal-description__left">
-              <form action="">
-                <input
-                  class="appeal-description__input"
-                  type="text"
-                  name="name"
-                  id="name"
-                  required
-                  placeholder="Name (Required)"
-                />
-                <input
-                  class="appeal-description__input"
-                  type="email"
-                  name="email"
-                  id="email"
-                  required
-                  placeholder="Email (Required)"
-                />
-                <input
-                  class="appeal-description__input"
-                  type="text"
-                  name="subject"
-                  id="subject"
-                  placeholder="Subject"
-                />
-                <textarea
-                  class="appeal-description__textarea"
-                  name="message"
-                  id="message"
-                  cols="30"
-                  rows="10"
-                  placeholder="Write your message here..."
-                ></textarea>
+            <div class="main-form__appeal-description">
+              <div class="appeal-description__left">
+                <form action="http://test.com/test">
+                  <input
+                    class="appeal-description__input"
+                    type="text"
+                    name="name"
+                    id="name"
+                    required
+                    placeholder="Name (Required)"
+                  />
+                  <input
+                    class="appeal-description__input"
+                    type="email"
+                    name="email"
+                    id="email"
+                    required
+                    placeholder="Email (Required)"
+                  />
+                  <input
+                    class="appeal-description__input"
+                    type="text"
+                    name="subject"
+                    id="subject"
+                    placeholder="Subject"
+                  />
+                  <textarea
+                    class="appeal-description__textarea"
+                    name="message"
+                    id="message"
+                    cols="30"
+                    rows="10"
+                    placeholder="Write your message here..."
+                  ></textarea>
 
-                <button class="appeal-description__button" type="submit">
-                  SEND
-                </button>
-              </form>
-            </div>
-            <div class="appeal-description__right">
-              <p class="appeal-description__form-text">
-                <strong>Quisque Hendrerit</strong>: purus dapibus, ornare nibh
-                vitae, viverra nibh. Fusce vitae aliquam tellus. Proin sit amet
-                volutpat libero. Nulla sed nunc et tortor luctus faucibus morbi
-                vitae.
-              </p>
-              <div class="appeal-description__contact-info">
-                <p class="contact-info__address">
-                  <i class="fas fa-map-marker-alt"></i>Elm St. 14/05 Lost City
+                  <button class="appeal-description__button" type="submit">
+                    SEND
+                  </button>
+                </form>
+              </div>
+              <div class="appeal-description__right">
+                <p class="appeal-description__form-text">
+                  <strong>Quisque Hendrerit</strong>: purus dapibus, ornare nibh
+                  vitae, viverra nibh. Fusce vitae aliquam tellus. Proin sit
+                  amet volutpat libero. Nulla sed nunc et tortor luctus faucibus
+                  morbi vitae.
                 </p>
-                <p class="contact-info__phone">
-                  <i class="fas fa-phone"></i
-                  ><a href="tel:+35283318635">+ 3528 331 86 35</a>
-                </p>
-                <p class="contact-info__email">
-                  <i class="fas fa-envelope"></i
-                  ><a href="mailto:info@hexalcorp.com">info@hexalcorp.com</a>
-                </p>
+                <div class="appeal-description__contact-info">
+                  <p class="contact-info__address">
+                    <i class="fas fa-map-marker-alt"></i>Elm St. 14/05 Lost City
+                  </p>
+                  <p class="contact-info__phone">
+                    <i class="fas fa-phone"></i
+                    ><a href="tel:+35283318635">+ 3528 331 86 35</a>
+                  </p>
+                  <p class="contact-info__email">
+                    <i class="fas fa-envelope"></i
+                    ><a href="mailto:info@hexalcorp.com">info@hexalcorp.com</a>
+                  </p>
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
+      </section>
+    </main>
+    <footer class="main-footer">
       <div class="main-footer__footer">© Copyright 2013 by PSDchat</div>
     </footer>
   </body>
